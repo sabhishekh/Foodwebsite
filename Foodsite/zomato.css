@@ -1,0 +1,270 @@
+Header{
+    background-image: url("zomato1.jpg");
+    background:cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 20px;
+    
+}
+
+.nav-cantainer{
+    list-style: none;
+    display: flex;
+    
+    align-items: center;
+    margin-left:550px
+
+}
+.nav-cantainer a{
+    margin:10px 30px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color:whitesmoke;
+
+}
+
+.main-heading{
+    font-size: 50px;
+    color:rgb(219, 21, 21);
+    text-align: center;
+
+}
+.Header-section{
+    border:1px solid whitesmoke ;
+    width:900px;
+    height: 50px;
+    background-color:whitesmoke;
+border-radius: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin:10px -150px;
+}
+.main-section{
+    margin:217px 500px;
+}
+.heading{
+    font-size: 30px;
+    text-align: center;
+    color: blanchedalmond;
+}
+.input-type{
+    
+    width:254px;
+    height: 28px;
+    border: white;
+    margin:1px 10px;
+
+
+}
+.input-icon{
+margin:3px 153px;
+}
+
+.conatiner-item{
+ border:1px solid silver;
+ width:350px;
+ height:56px;
+ border-radius: 3px;
+ margin: 10px 40px;
+ 
+}
+.container-items-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+    .middle-heading{
+        text-align: center;
+    font-weight: bold;
+    }
+    footer{
+        background-color: cornflowerblue;
+    }
+    .footer-heading{
+        font-size: 30px;
+        text-align: center;
+    }
+    .footer-item{
+        font-size: 30px;
+        margin-left:30px;
+    }
+    li{
+        font-size: 20px;
+        list-style: none;
+    }
+    .footer-part{
+        display: flex;
+    }
+   .footer-section{
+    margin:10px 70px;
+   }
+    h5{
+        margin: 12px 10px;
+    }
+    .middle-box{
+        display: flex;
+        margin: 20px 100px;
+        padding:30px;
+    }
+    .cards1{
+        margin: 5px 80px;
+        height:100px
+    
+    }
+    .cards2{
+        margin:5px 80px;
+    }
+    .cards3{
+        margin:5px 80px;
+        height: 100px;
+    }
+    p{
+        font-size: 30px;
+        font-weight: lighter;
+    }
+    .cantainer-box1{
+        border: 1px solid ;
+        width:300px;
+        height:350px;
+        background-image: url('Romatic.jpg');
+        background: cover;
+        background-repeat: no-repeat;
+        box-shadow: 1px 2px 4px 5px;
+        cursor: pointer;
+        margin:10px 30px;
+        
+     
+    }
+    .cantainer-box1:hover{
+        transform:scale(2,1);
+    }
+    .cantainer-box2{
+        border: 1px solid ;
+        width:300px;
+        height:350px;
+        background-image: url('open.jpg');
+        background-size: 50vh;
+        box-shadow: 1px 2px 4px 5px;
+        cursor: pointer;
+        margin:10px 30px;
+     
+    }
+    .cantainer-box2:hover{
+        transform:scale(2,1);
+    }
+    .cantainer-box3{
+        border: 1px solid ;
+        width:300px;
+        height:350px;
+        background-image: url('buffest.jpg');
+        background: cover;
+        background-repeat: no-repeat;
+        box-shadow: 1px 2px 4px 5px;
+        cursor: pointer;
+        margin:10px 30px;
+     
+
+    }
+    .cantainer-box3:hover{
+        transform:scale(2,1);
+    }
+    .cantainer-box4{
+        border: 1px solid silver;
+        width:300px;
+        height:350px;
+        background-image: url('party.jpg');
+        background-size: 80vh;
+        background-repeat: no-repeat;
+        box-shadow: 1px 2px 4px 5px;
+        cursor: pointer;
+        margin: 10px 30px;
+        
+    
+    }
+    .cantainer-box4:hover{
+        transform:scale(2,1);
+    }
+    .box-items{
+        margin:250px 10px;
+        color:whitesmoke;
+        font-weight: bold;
+
+    }
+.container-feature{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:20px -28px;
+    }
+.Heading-box{
+    text-align: center;
+}
+.img-mob{
+    width:400px;
+    height:450px;
+    border-radius: 10px;
+    margin:30px 100px;
+    
+}
+.search-box{
+    width:250px;
+    height: 20px;
+}
+#App-cantainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+
+}
+.icon-n{
+    margin-left: 10p;
+}
+li i{
+    margin:3px 10px;
+}
+@media (min-width:320px)and (max-width:650px) {
+Header{background-image: url('zomato1.jpg');
+
+    background-repeat: round;
+    }
+    .nav-cantainer{
+        margin:10px -48px;
+}
+.main-section{
+    margin:10px 30px;
+}
+.Header-section{
+    display: none;
+}
+.middle-box{
+    margin:10px -90px;
+}
+.container-feature{
+    display:none;
+}
+   
+}
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
