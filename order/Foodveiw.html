@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    body{
+        background-image: url('order3.jpg');
+        background-size: cover;
+
+    }
+    .Food-cantainer{
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 10px 150px;
+        
+    }
+   
+      .img1{
+        border-radius: 30px;
+        cursor: pointer;
+
+      }
+      .img1:hover{
+        transform: scale(2,1);
+      }
+      button{
+        width: 174px;
+        height: 50px;
+        font-size: 20px;
+        text-align: center;
+        cursor: pointer;
+        color: brown;
+        margin: 5px 50px;
+    border-radius: 30px;
+    background-color: aqua;
+    font-weight: bold;
+}
+      button:hover{
+        background-color: blue;
+      }
+
+
+   
+   .img2{
+    border-radius: 30px;
+    cursor: pointer;
+   }
+   .img2:hover{
+        transform: scale(2,1);
+      }
+   .food-items3{
+    
+
+   }
+   .img3{
+    border-radius: 30px;
+   }
+   .img3:hover{
+        transform: scale(2,1);
+      }
+.Food-cantainer1{
+    display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 10px 150px;
+}
+h1{
+    text-align: center;
+    color: rgb(111, 6, 209);
+    font-weight: bold;
+}
+   </style>
+</head>
+<body>
+<p id="demo"></p>
+
+    <div class="main-cantainer">
+        <h1>FOOD ORDER CLICK</h1>
+    <div class="Food-cantainer">
+        <div class="food-items1">
+        <img class="img1" src="order1.jpg" width="300" height="360"><br>
+        <button onclick="Myfunction()">ORDER1</button></div>
+        <div class="food-items2">
+        <img class="img2" src="order2.jpg" width="300" height="360"><br>
+        <button onclick="">ORDER2</button></div>
+        <div class="food-items3">
+        <img class="img3" src="order3.jpg" width="300" height="360"><br>
+        <button onclick="">ORDER3</button>
+        </div>
+    </div>
+    <div class="Food-cantainer1">
+        <div class="food-items4">
+            <img class="img1" src="order4.jpg" width="300" height="360"><br>
+            <button onclick="">ORDER4</button></div>
+            <div class="food-items5">
+            <img class="img2" src="order5.jpg" width="300" height="360"><br>
+            <button onclick="">ORDER5</button></div>
+            <div class="food-items6">
+            <img class="img3" src="order6.jpg" width="300" height="360"><br>
+            <button onclick="">ORDER6</button>
+            </div>
+    </div>
+</div>
+<script>
+    function Myfunction(){
+        
+        alert("your order is Received");
+    }
+</script>
+        
+        
+
+</body>
+</html>
