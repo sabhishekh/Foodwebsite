@@ -1,0 +1,305 @@
+body{
+  
+   overflow-x: hidden;
+
+
+}
+
+
+Header{
+    background-image: url("zomato1.jpg");
+    background:cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 20px;
+    
+}
+.container-fluid{
+    margin:0px 50px;
+
+}
+
+
+
+.main-heading{
+    font-size: 50px;
+    color:rgb(219, 21, 21);
+    text-align: center;
+
+}
+.Header-section{
+    border:1px solid whitesmoke ;
+    width:900px;
+    height: 50px;
+    background-color:whitesmoke;
+border-radius: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin:10px -150px;
+}
+.main-section{
+    margin:217px 500px;
+}
+.heading{
+    font-size: 30px;
+    text-align: center;
+    color: blanchedalmond;
+}
+.input-type{
+    
+    width:254px;
+    height: 28px;
+    border: white;
+    margin:1px 10px;
+
+
+}
+.input-icon{
+margin:3px 153px;
+}
+
+.conatiner-item{
+ border:1px solid silver;
+ width:350px;
+ height:56px;
+ border-radius: 3px;
+ margin: 10px 40px;
+ 
+}
+.container-items-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    
+
+}
+    .middle-heading{
+        text-align: center;
+    font-weight: bold;
+    }
+    footer{
+        background-color: cornflowerblue;
+    }
+    .footer-heading{
+        font-size: 30px;
+        text-align: center;
+    }
+    .footer-item{
+        font-size: 30px;
+        margin-left:30px;
+    }
+    li{
+        font-size: 20px;
+        list-style: none;
+    }
+    .footer-part{
+        display: flex;
+        flex-wrap: wrap;
+    }
+   .footer-section{
+    margin:10px 70px;
+   }
+    h5{
+        margin: 12px 10px;
+    }
+    .cards1{
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    }
+    .card{
+        margin: 40px;
+        cursor: pointer;
+        border-radius: 20px;
+
+    }
+    
+    p{
+        font-size: 30px;
+        font-weight: lighter;
+    }
+    .conatiner-box1{
+        width:100%;
+        height:auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 50px;
+        
+
+        
+
+    }
+    .flex-box1{
+        width: 300px;
+        height: 360px;
+        background-image: url('Romatic.jpg');
+        color: white;
+    
+        cursor: pointer;
+        
+font-size: 25px;
+line-height: 200px;
+border-radius: 20px;
+margin: 30px;
+    }
+      .flex-box1:hover{
+        transform: scale(2,1);
+      }
+      .box-items{
+        margin: 219px 20px;
+      }
+    .flex-box2{
+        width: 300px;
+        height: 360px;
+        background-image: url('open.jpg');
+        background-size: cover;
+        color: white;
+font-size: 25px;
+line-height: 200px;
+border-radius: 20px;
+margin: 30px;
+    }
+    .flex-box2:hover{
+        transform: scale(2,1);
+      }
+    .flex-box3{
+        width: 300px;
+        height: 360px;
+        background-image: url('buffest.jpg');
+        color: white;
+        
+        
+font-size: 25px;
+line-height: 200px;
+border-radius: 20px;
+margin: 30px;
+    }
+    .flex-box3:hover{
+        transform: scale(2,1);
+      }
+    .flex-box4{
+        width: 300px;
+        height: 360px;
+        background-image: url('party.jpg');
+        color: white;
+        
+        
+font-size: 25px;
+line-height: 200px;
+border-radius: 20px;
+margin: 30px;
+    }
+    .flex-box4:hover{
+        transform: scale(2,1);
+      }
+        
+     
+    
+    
+    
+
+    
+
+    
+
+.Heading-box{
+    text-align: center;
+}
+.img-mob{
+    width:400px;
+    height:450px;
+    border-radius: 10px;
+    margin:30px 100px;
+    
+}
+.search-box{
+    width:250px;
+    height: 20px;
+}
+#App-cantainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+    flex-wrap: wrap;
+
+}
+.icon-n{
+    margin-left: 10p;
+}
+li i{
+    margin:3px 10px;
+}
+
+
+    
+
+@media (min-width:320px)and (max-width:650px) {
+Header{background-image: url('zomato1.jpg');
+
+    background-size: 200vh;
+    
+    
+    }
+    .nav-cantainer{
+        margin:10px -48px;
+       
+}
+.nav-cantainer a{
+    
+    color:black;
+    font-weight: bold;
+}
+.main-section{
+    margin:10px 30px;
+}
+.Header-section{
+    display: none;
+
+
+}
+.container-feature{
+    display:none;
+}
+.conatiner-box1{
+    margin-left:5px;
+}
+#App-cantainer{
+    margin-left: 5px;
+}
+.search-box{
+    width:200px;
+    height: 36px;
+}
+.btn2{
+    width: 100px;
+    height: 36px;
+}
+.footer-section{
+    margin:10px;
+}
+   
+}
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
