@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <style>
+         
+          body {
+            position: relative;
+            height: 100%;
+            
+          }
+      
+          body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+          }
+      
+          .swiper {
+            width: 100%;
+            height: 100%;
+          }
+      
+          .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+      
+          .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          *{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+nav{
+  background: #0082e6;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.buttons {
+    margin: 10%;
+    text-align: center;
+}
+
+.btn-hover {
+    width: 130px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+.btn-hover.color-3 {
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+.btn-hover.color-4{
+  background-image: linear-gradient(to right, gray , black);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+        </style>
+        <link rel="stylesheet" href="Styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+<body>
+    <header>
+        
+      <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">DesignX</label>
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+      </nav>
+      <section></section>
+        
+        
+        <div class="swiper mySwiper" >
+          <div class="swiper-wrapper" >
+            <div class="swiper-slide" style="background-image: url('../images/slider1.jpg');
+            background-color: #cccccc;
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;"
+          
+          >
+          <h1>E-Commerce <br>
+            Product Mapping <br>
+            
+            Services <p style="font-size: 20px;color: yellow;">The product mapping procedure with more profound learning <br>
+              technologies includes their characteristics, locates items, costing, and <br>
+              other information across different resources. Product matching is <br>
+              among the essential fundamentals of competitive da</p>
+              <div class="btn1">
+                <button class="btn-hover color-3">E-Commerce</button>
+                <button class="btn-hover color-4 ">contact</button>
+              </div>
+</h1>
+<img style="width: 400px;" src="nature.jpg">
+
+            
+            
+        </div>
+            <div class="swiper-slide"style="background-image: url('../images/slider1.jpg');  background-color: #cccccc;
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;"
+           ></div>
+            <div class="swiper-slide"style="background-image: url('../images/slider1.jpg');  background-color: #cccccc;
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;"
+          ></div>
+           
+            
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      
+      
+      
+      
+        <div class="main-Box">
+            <h6 style="color: rgb(21, 3, 111); text-align: center;">CRAWL</h6>
+            <h1 style="text-align: center; color: black;">Our Services</h1>
+            <h6 style="text-align: center; color: black;" >we providing web scraping data and data extraction services to the world's most popular brands. </h6>
+
+              
+                    
+                
+                    <div class="row" style="justify-content: space-around;">
+                      <div class="column">
+                        <div class="card">
+                          <h3 style="color: black;">Web Scraping Services</h3>
+                          
+                          <p style="color:black">A complete data service provider at your 
+                            service! You don't need hardware, software, 
+                            scraping skills, or tools, as we will do 
+                            everything for you!</p>
+                          <a href="#" style="text-decoration: none;">View details →</a>
+                        </div>
+                      </div>
+                    
+                      <div class="column">
+                        <div class="card">
+                          <h3 style="color: black;">Mobile App Scraping</h3>
+                         
+                          <p style="color: #000;">Find out why mobile apps are an essential 
+                            part of today's business industry and how 
+                            our app scraping services can help you 
+                            succeed</p>
+                            <a href="#" style="text-decoration: none;">View details →</a>
+                        </div>
+                        
+                      </div>
+                      
+                      <div class="column">
+                        <div class="card">
+                          <h3 style="color: black;">Integrations</h3>
+                          <p style="color: black;">We create customized real-time APIs that 
+                            don't offer an API or get data-limited APIs 
+                            to help you integrate data in all the 
+                            applications</p>
+                            <a href="#" style="text-decoration: none;">View details →</a>
+                        </div>
+                      </div>
+                      
+</div>
+        </div>
+        <div class="column" style="width: 100vw; margin-top: 20px;">
+          <div class="card">
+            <h6 style="color: rgb(21, 3, 111); text-align: center;">CRAWL</h6>
+            <h1 style="color: black;">How Businesses are Getting 
+              Data withWeb Scraping</h1>
+<p style="color: black;">We provide web scraping and data extraction services to the world's most popular brands</p>
+            <div class="btns" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">  
+              <button class="btn-hover color-3">E-Commerce</button>
+              <button class="btn-hover color-4" >Food Delivery</button>
+              <button class="btn-hover color-4">Travel</button>
+              <button class="btn-hover color-4">Social Media</button>
+              <button class="btn-hover color-4">Real Estate</button>
+              <button class="btn-hover color-4">Grocery Delivery</button>
+              <button class="btn-hover color-4">OTT Media</button>
+             
+      </div>
+      </div>
+      </div>
+     
+      <div class="column" style="width: 100%; margin-top: 20px; ">
+        <div class="card"  >
+        
+          <div class="imgws3"style="display: flex; flex-wrap: wrap;justify-content: space-around;">
+            <div class="imgss">
+
+            <h1>E-commerce</h1>
+      <p >
+        We offer a complete data scraping solution, including automation and <br>
+
+human validation, accessing precise and quality e-commerce data <br>
+scraping from e-commerce sites worldwide. Extract product prices, <br>
+descriptions, ratings, ranking, reviews, and other data according to <br>
+your requests. We combine, organize, and scrape e-commerce data for <br>
+SKUs, markets, and e-commerce sites. The well-known e-commerce <br>
+websites we scrape consist of:<br>
+      </p>
+      <div class="list" style="display: flex; flex-wrap: wrap; justify-content: space-between;text-align: center;">
+      <div class="order-list">
+        <ul>
+          <li>Amazon</li>
+          <li>eBay</li>
+          <li>lazada</li>
+        </ul>
+      </div>
+      <div class="order-list1">
+        <ul>
+          <li>Aliexpress</li>
+          <li>Shopee</li>
+          <li>Tmall</li>
+        </ul>
+      </div>
+      </div>
+      <button class="btn-hover color-3">BUTTON</button>
+      
+      </div>
+    
+    
+      <img src="../images/couple.jpg" style="width: 400px;">
+      </div>
+  </div>
+</div>
+
+    
+    </div>
+    <div class="main-name" >
+      <div class="Name1" style="text-align: center;">
+      <h6>Ready made Web Scrapers & APIs</h6>
+      <h1>Marketplace</h1>
+      <h7>At, Actowiz, we offer ready-made Web Scrapers & APIs to scrape data from any website. Get data which will be ready to use.</h7>
+</div>
+<button class="btn-hover color-3" style="margin: 0px 100px; ">E-Commerce</button>
+    </div>
+    <div class="card-list">
+      <a href="#" class="card-item">
+         
+          <h1 style="color: #000;">Airbnb Scraper</h1>
+          <h6 style="color: #000;">A complete data service provider at your 
+            service! You don't need hardware, software, 
+            scraping skills, or tools, as we will do 
+            everything for you! You don't need hardware, 
+            software, scraping</h4>
+         
+      </a>
+      <a href="#" class="card-item">
+        <h1 style="color: #000;">Amazon Product Details and 
+          Pricing Scraper</h1>
+        <h6 style="color: #000;">A complete data service provider at your 
+          service! You don't need hardware, software, 
+          scraping skills, or tools, as we will do 
+          everything for you!</h4>
+      </a>
+      <a href="#" class="card-item">
+        <h1 style="color: #000;">Alibaba Scraper</h1>
+        <h6 style="color: #000;">A complete data service provider at your 
+          service! You don't need hardware, software, 
+          scraping skills, or tools, as we will do 
+          everything for you! You don't need hardware, 
+          software, scraping </h4>
+      </a>
+  </div>
+  <div class="card-list">
+    <a href="#" class="card-item">
+      <h1 style="color: #000;">LinkedIn Scraper</h1>
+        <h6 style="color: #000;">A complete data service provider at your 
+          service! You don't need hardware, software, 
+          scraping skills, or tools, as we will do 
+          everything for you! You don't need hardware, 
+          software, scraping</h4>
+    </a>
+    <a href="#" class="card-item">
+      <h1 style="color: #000;">Zillow Scraper</h1>
+      <h6 style="color: #000;">A complete data service provider at your 
+        service! You don't need hardware, software, 
+        scraping skills, or tools, as we will do 
+        everything for you! You don't need hardware, 
+        software, scraping</h4>
+    </a>
+    <a href="#" class="card-item">
+      <h1 style="color: #000;">Indeed Job Listings Scraper</h1>
+      <h6 style="color: #000;">A complete data service provider at your 
+        service! You don't need hardware, software, 
+        scraping skills, or tools, as we will do 
+        everything for you! You don't need hardware, 
+        software, scraping</h4>
+    </a>
+</div>
+    
+</header>
+      
+
+</body>
+    
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+</body>
+
+
+</html>
